@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Person</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-image: url('images/bg1.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #ffc0cb;
+      padding: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      margin-left: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin-right: 20px;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    main.content {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      font-size: 42px;
+      color: #ece8e9;
+      margin-bottom: 40px;
+      animation: fadeDown 1s ease-out;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .contact-list li a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px 30px;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ff6388;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+      width: 320px;
+      justify-content: center;
+    }
+
+    .contact-list li:nth-child(1) a { animation-delay: 0.3s; }
+    .contact-list li:nth-child(2) a { animation-delay: 0.6s; }
+    .contact-list li:nth-child(3) a { animation-delay: 0.9s; }
+
+    .contact-list li a:hover {
+      background-color: #ffe6eb;
+      transform: scale(1.05);
+    }
+
+    .contact-list i {
+      margin-right: 12px;
+      font-size: 20px;
+      animation: swing 2s infinite ease-in-out;
+    }
+
+    .year {
+      display: block;
+      margin-top: 60px;
+      color: #aaa;
+      font-size: 14px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    footer {
+      background-color: rgba(235, 148, 148, 0.5);
+      padding: 30px 0;
+      color: #eee;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 10px 0;
+    }
+
+    footer a {
+      color: #141313;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 20px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes swing {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <h1 class="logo">DK</h1>
+      <ul>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact Person</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <h2>Contact Person</h2>
+    <ul class="contact-list">
+      <li>
+        <a href="https://www.instagram.com/dila.kurnia_?igsh=ejZsN3ZoNzV3OXVt" target="_blank">
+          <i class="fab fa-instagram"></i> @dila.kurnia_
+        </a>
+      </li>
+      <li>
+        <a href="https://wa.me/6281392005677" target="_blank">
+          <i class="fab fa-whatsapp"></i> +62 8139 200 5677
+        </a>
+      </li>
+      <li>
+        <a href="mailto:dillakurr@gmail.com">
+          <i class="fas fa-envelope"></i> dillakurr@gmail.com
+        </a>
+      </li>
+    </ul>
+    <span class="year">© 2025</span>
+  </main>
+</body>
+</html>
